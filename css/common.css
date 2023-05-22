@@ -1,0 +1,14 @@
+
+.bg-soil {
+    background: #AC9E9D;
+}
+.ecsite-btn {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 12rem;
+    margin-bottom: 3rem;
+}
+.ecsite-btn img {
+    width: 80px;
+}
