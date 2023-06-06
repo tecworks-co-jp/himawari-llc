@@ -12,3 +12,21 @@
 .ecsite-btn img {
     width: 80px;
 }
+.origin-underline {
+    display: inline-block;
+    position: relative;
+}
+.origin-underline:before {
+    content: ''; 
+    position: absolute; 
+    left: 50%; 
+    bottom: -5px; /*下線の上下位置調整*/ 
+    display: inline-block; 
+    width: 26px; /*下線の幅*/ 
+    height: 2px; /*下線の太さ*/ 
+    -moz-transform: translateX(-50%); 
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%); 
+    transform: translate(-50%); /*位置調整*/ 
+    background-color: #666666; /*下線の色*/
+}
