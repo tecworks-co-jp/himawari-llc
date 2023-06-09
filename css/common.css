@@ -1,16 +1,76 @@
-
-.bg-soil {
-    background: #AC9E9D;
+h2 {
+    color: #707070;
+    font-size: 36px;
 }
-.ecsite-btn {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    margin-right: 12rem;
-    margin-bottom: 3rem;
+h3 {
+    color: #707070;
+    font-size: 24px;
+    margin-bottom: 40px;
 }
-.ecsite-btn img {
-    width: 80px;
+p {
+    color: #b0b0b0;
+    font-size: 16px;
+}
+.position-relative {
+    position: relative;
+}
+.position-relative ul {
+    position: absolute;
+}
+.headline-style {
+    margin-bottom: 70px;
+}
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+.margin-bottom-60 {
+    margin-bottom: 60px;
+}
+.margin-bottom-115 {
+    margin-bottom: 115px;
+}
+.margin-bottom-150 {
+    margin-bottom: 150px;
+}
+.min-height-120 {
+    min-height: 120px;
+}
+.small {
+    font-size: 14px;
+}
+.onlineshop-btn {
+    border: 1px solid #707070;
+    color: #707070;
+    padding: 4px 20px;
+    text-decoration: none;
+}
+.onlineshop-link {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+.global-menu {
+    list-style: none;
+    overflow: hidden;
+}
+.global-menu li {
+    float: left;
+    text-align: center;
+}
+.global-menu li a {
+    color: #b0b0b0;
+    font-size: 18px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+.global-menu-shop-btn {
+    padding-bottom: 1px;
+}
+.global-menu-shop-btn a {
+    border: 1px solid #b0b0b0;
+    font-size: 14px !important;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .origin-underline {
     display: inline-block;
@@ -28,5 +88,27 @@
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%); 
     transform: translate(-50%); /*位置調整*/ 
-    background-color: #666666; /*下線の色*/
+    background-color: #761413; /*下線の色*/
 }
+
+/* スマホサイズ */
+@media screen and (max-width: 499px) {
+    .global-menu {
+        display: none;
+    }
+    .sm-margin-bottom-30 {
+        margin-bottom: 30px;
+    }
+    .sm-margin-bottom-50 {
+        margin-bottom: 50px;
+    }
+}
+
+/* 見出し 707070
+   通常文字 b0b0b0
+   見出し下線 761413
+   お店名前 24pt 32px
+   通常文字 16pt 21.34px
+   見出し 36pt 48pt
+   1pt = 1.3px
+*/
