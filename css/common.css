@@ -1,14 +1,17 @@
 h2 {
     color: #707070;
+    font-family: "Calibri", sans-serif;
     font-size: 36px;
 }
 h3 {
     color: #707070;
+    font-family: "YuGothic", sans-serif;
     font-size: 24px;
     margin-bottom: 40px;
 }
 p {
     color: #b0b0b0;
+    font-family: "YuGothic", sans-serif;
     font-size: 16px;
 }
 .position-relative {
@@ -36,7 +39,7 @@ p {
     min-height: 120px;
 }
 .small {
-    font-size: 14px;
+    font-size: 18px;
 }
 .onlineshop-btn {
     border: 1px solid #707070;
@@ -58,6 +61,7 @@ p {
 }
 .global-menu li a {
     color: #b0b0b0;
+    font-family: "Calibri", sans-serif;
     font-size: 18px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -90,6 +94,11 @@ p {
     transform: translate(-50%); /*位置調整*/ 
     background-color: #761413; /*下線の色*/
 }
+.loveyou-logo {
+    height: 100px;
+    margin-bottom: 20px;
+    width: 240px;
+}
 
 /* スマホサイズ */
 @media screen and (max-width: 499px) {
@@ -101,6 +110,9 @@ p {
     }
     .sm-margin-bottom-50 {
         margin-bottom: 50px;
+    }
+    .sm-text-center {
+        text-align: center;
     }
 }
 
