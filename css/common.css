@@ -41,6 +41,7 @@ p {
 .products-image {
     margin: 0 auto;
     max-width: 835px;
+    width: 100%;
 }
 .headline-style {
     margin-bottom: 70px;
@@ -153,6 +154,13 @@ p {
     }
     .headline-style {
         margin-bottom: 40px;
+    }
+    .menu-logo {
+        width: 100px;
+        margin: 10px auto;
+    }
+    .menu-logo img {
+        width: 100%;
     }
     .margin-bottom-115 {
         margin-bottom: 60px;
