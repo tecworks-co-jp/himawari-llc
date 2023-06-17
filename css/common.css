@@ -96,6 +96,16 @@ p {
 .menu-logo {
     width: 100px;
 }
+.fv-logo{
+    position: absolute;
+    z-index: 999;
+    height: 70px;
+    width: 29%;
+    right: 12%;
+    top: -30%;
+    bottom: 0;
+    margin: auto;
+}
 .global-menu-shop-btn {
     padding-bottom: 1px;
 }
@@ -124,7 +134,6 @@ p {
     background-color: #a50000; /*下線の色*/
 }
 .loveyou-logo {
-    height: 100px;
     margin-bottom: 20px;
     width: 240px;
 }
@@ -171,6 +180,11 @@ p {
     .global-menu {
         display: none;
     }
+    .carousel {
+        width: 200%;
+        margin-left: -40%;
+    }
+    }
     .sm-display-none {
         display: none;
     }
@@ -191,5 +205,9 @@ p {
     }
     .concept-block {
         margin-bottom: 30px;
+    }
+    .loveyou-logo {
+        margin-bottom: 20px;
+        width: 140px;
     }
 }
