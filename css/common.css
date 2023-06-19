@@ -181,8 +181,17 @@ p {
         display: none;
     }
     .carousel {
-        width: 200%;
-        margin-left: -40%;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .carousel-inner {
+        position: relative;
+        width: 240%;
+    }
+    .carousel-inner .d-block {
+        position: relative;
+        top: 0;
+        right: 23%;
     }
     .sm-display-none {
         display: none;
