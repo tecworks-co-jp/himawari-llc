@@ -43,6 +43,10 @@ p {
     max-width: 835px;
     width: 100%;
 }
+.oil-image {
+    margin: 0 auto;
+    width: 23%;
+}
 .headline-style {
     margin-bottom: 70px;
 }
@@ -137,10 +141,10 @@ p {
     margin-bottom: 20px;
     width: 240px;
 }
-.concept-block {
+.story-block {
     margin-bottom: 60px;
 }
-.concept-block p {
+.story-block p {
     margin-bottom: 25px;
 }
 .shop-info p {
@@ -211,7 +215,7 @@ p {
     .sm-text-left {
         text-align: left;
     }
-    .concept-block {
+    .story-block {
         margin-bottom: 30px;
     }
     .loveyou-logo {
