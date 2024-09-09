@@ -43,6 +43,10 @@ p {
     max-width: 835px;
     width: 100%;
 }
+.oil-image {
+    margin: 0 auto;
+    width: 23%;
+}
 .headline-style {
     margin-bottom: 70px;
 }
@@ -137,10 +141,10 @@ p {
     margin-bottom: 20px;
     width: 240px;
 }
-.concept-block {
+.story-block {
     margin-bottom: 60px;
 }
-.concept-block p {
+.story-block p {
     margin-bottom: 25px;
 }
 .shop-info p {
@@ -193,6 +197,14 @@ p {
         top: 0;
         right: 23%;
     }
+    .carousel-inner-sm {
+        position: relative;
+        width: 100%;
+    }
+    .carousel-inner-sm .d-block {
+        position: relative;
+        top: 0;
+    }
     .sm-display-none {
         display: none;
     }
@@ -211,7 +223,7 @@ p {
     .sm-text-left {
         text-align: left;
     }
-    .concept-block {
+    .story-block {
         margin-bottom: 30px;
     }
     .loveyou-logo {
