@@ -154,6 +154,45 @@ p {
     display: none;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.column {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;  /* 各カラムの幅を均等に */
+    min-width: 250px; /* 最小幅 */
+}
+
+/* PC（幅が768px以上）のレイアウト */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* 横並びに */
+    }
+
+    .column {
+        flex-basis: calc(33.333% - 20px); /* 各カラムが3分の1の幅 */
+    }
+}
+
+/* スマホ（幅が768px未満）のレイアウト */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column; /* 縦に並べる */
+    }
+
+    .column {
+        flex-basis: 100%; /* 各カラムが100%の幅 */
+        margin-bottom: 20px;
+    }
+}
+
 /* スマホサイズ */
 @media screen and (max-width: 499px) {
     /* img {
