@@ -45,7 +45,7 @@ p {
 }
 .oil-image {
     margin: 0 auto;
-    width: 23%;
+    width: 100%;
 }
 .headline-style {
     margin-bottom: 70px;
@@ -154,40 +154,54 @@ p {
     display: none;
 }
 
-.container {
+.sec-3col {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px;
 }
 
-.column {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.sec-3col__box {
+    margin: 0 34px 0 0;
     flex: 1;  /* 各カラムの幅を均等に */
-    min-width: 250px; /* 最小幅 */
+}
+.sec-3col__box:last-child{
+    margin: 0 0 0 0;
+}
+.sec-3col__img img {
+    width: 100%;
+}
+img.img--round{
+    border-radius: 50px;
 }
 
+.products__kvbox {
+    position: relative;
+}
+.products__kvbox__img {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50%;
+    z-index: -999;
+}
 /* PC（幅が768px以上）のレイアウト */
 @media (min-width: 768px) {
-    .container {
+    .sec-3col {
         flex-direction: row; /* 横並びに */
     }
 
-    .column {
-        flex-basis: calc(33.333% - 20px); /* 各カラムが3分の1の幅 */
+    .sec-3col__box {
+        flex-basis: calc(33.333% - 68px); /* 各カラムが3分の1の幅 */
     }
 }
 
 /* スマホ（幅が768px未満）のレイアウト */
 @media (max-width: 767px) {
-    .container {
+    .sec-3col {
         flex-direction: column; /* 縦に並べる */
     }
 
-    .column {
+    .sec-3col__box {
         flex-basis: 100%; /* 各カラムが100%の幅 */
         margin-bottom: 20px;
     }
