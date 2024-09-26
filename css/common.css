@@ -177,6 +177,22 @@ img.img--round{
 .products__kvbox {
     position: relative;
 }
+.products__kvbox__cont{
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+.products__kvbox__text{
+    width: 45%;
+    margin-left: 55%;
+    padding-top: 15vw;
+}
+.products__kvbox__ttl{
+    position: absolute;
+    right: 0;
+    top:0;
+    width: 62%;
+}
 .products__kvbox__img {
     position: absolute;
     top:0;
@@ -198,12 +214,36 @@ img.img--round{
 /* スマホ（幅が768px未満）のレイアウト */
 @media (max-width: 767px) {
     .sec-3col {
-        flex-direction: column; /* 縦に並べる */
+        flex-direction: unset; /* 縦に並べる */
     }
 
     .sec-3col__box {
         flex-basis: 100%; /* 各カラムが100%の幅 */
-        margin-bottom: 20px;
+        margin: 0 0 0 0;
+    }
+    .products__kvbox__cont{
+        max-width: 1080px;
+        margin: 0 12px;
+        position: relative;
+    }
+    .products__kvbox__text{
+        width: 100%;
+        margin-left: 0;
+        padding-top: 0;
+    }
+    .products__kvbox__ttl{
+        position: relative;
+        right: 0;
+        top:0;
+        width: 100%;
+    }
+    .products__kvbox__text h3{
+        margin-top: -10px;
+    }
+    .products__kvbox__img {
+        position: relative;
+        width: 97%;
+        z-index: -999;
     }
 }
 
