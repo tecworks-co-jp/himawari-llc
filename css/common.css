@@ -177,9 +177,13 @@ img.img--round{
 .products__kvbox {
     position: relative;
 }
+#bdoil .products__kvbox {
+    margin-bottom: 28%;
+}
 .products__kvbox__cont{
     max-width: 1080px;
     margin: 0 auto;
+    padding-bottom: 150px;
     position: relative;
 }
 .products__kvbox__text{
@@ -199,6 +203,92 @@ img.img--round{
     left:0;
     width: 50%;
     z-index: -999;
+}
+#bdoil .products__kvbox__img {
+    width: 52%;
+}
+.bdoil__tips {
+    position: absolute;
+    z-index: -9999;
+    left: 0;
+    right: 0;
+    top: 32vw;
+    margin: auto;
+    width: 745px;
+}
+.bdoil__tips h4{
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    background: url(../image/deco_red_round.svg) no-repeat;
+    width: 366px;
+    padding: 231px 56px 70px 43px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.bdoil__tips h4 strong{
+    font-size: 32px;
+    font-weight: bold;
+}
+.bdoil__tips p{
+    display: inline-block;
+    color: #fff;
+    background: url(../image/deco_pink_round.svg) no-repeat;
+    width: 423px;
+    padding: 107px 54px 92px 69px;
+    position: absolute;
+    top: 116px;
+    right: 0;
+    z-index: -1;
+}
+.products__kvbox__cotton {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 35%;
+    z-index: -999;
+}
+.products__detail {
+    display: flex;
+}
+.products__detail__text {
+    width: 50%;
+    padding-right: 50px;
+}
+.products__detail img{
+    width: 50%;
+    height: fit-content;
+}
+.products__scrollimg {
+}
+@keyframes infinity-scroll-left {
+    from {
+      transform: translateX(0);
+    }
+      to {
+      transform: translateX(-100%);
+    }
+}
+.scroll-infinity__wrap {
+    display: flex;
+    overflow: hidden;
+}
+.scroll-infinity__list {
+    display: flex;
+    list-style: none;
+    padding: 0
+}
+.scroll-infinity__list--left {
+    animation: infinity-scroll-left 40s infinite linear 0.5s both;
+}
+.scroll-infinity__item {
+    width: calc(100vw / 4);
+    padding: 16px;
+}
+.scroll-infinity__item>img {
+    width: 100%;
 }
 /* PC（幅が768px以上）のレイアウト */
 @media (min-width: 768px) {
@@ -225,6 +315,7 @@ img.img--round{
         max-width: 1080px;
         margin: 0 12px;
         position: relative;
+        padding-bottom: 0;
     }
     .products__kvbox__text{
         width: 100%;
@@ -240,10 +331,56 @@ img.img--round{
     .products__kvbox__text h3{
         margin-top: -10px;
     }
-    .products__kvbox__img {
+    .products__kvbox__img,
+    #bdoil .products__kvbox__img {
         position: relative;
         width: 97%;
         z-index: -999;
+    }
+    .products__detail {
+        display: block;
+    }
+    .products__detail__text {
+        width: 100%;
+        padding-right: 50px;
+    }
+    .products__detail img{
+        width: 100%;
+    }
+    .bdoil__tips {
+        position: relative;
+        margin: auto;
+        width: 100%;
+    }
+    .bdoil__tips h4{
+        display: inline-block;
+        font-size: 24px;
+        color: #fff;
+        background: url(../image/deco_red_round.svg) no-repeat;
+        width: 366px;
+        padding: 231px 56px 70px 43px;
+        position: relative;
+        z-index: 0;
+    }
+    .bdoil__tips h4 strong{
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .bdoil__tips p{
+        display: inline-block;
+        color: #fff;
+        background: url(../image/deco_pink_round.svg) no-repeat;
+        width: 423px;
+        padding: 107px 54px 92px 69px;
+        position: relative;
+        z-index: -1;
+    }
+    .scroll-infinity__list--left {
+        animation: infinity-scroll-left 40s infinite linear 0.5s both;
+    }
+    .scroll-infinity__item {
+        width: calc(100vw / 2);
+        padding: 10px;
     }
 }
 
