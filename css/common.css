@@ -693,6 +693,7 @@ img.img--round{
     }
     .products__detail img{
         width: 100%;
+        height: auto;
     }
     .bdoil__tips {
         position: relative;
