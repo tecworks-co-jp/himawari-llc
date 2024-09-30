@@ -333,7 +333,7 @@ img.img--round{
 }
 .products__detail img{
     width: 50%;
-    height: fit-content;
+    height: auto;
 }
 .products__tips {
     display: flex;
@@ -362,7 +362,7 @@ img.img--round{
 .products__tips img.img--round {
     width: 38.6%;
     margin-right: 50px;
-    height: fit-content;
+    height: auto;
 }
 .products__scrollimg {
     position: relative;
