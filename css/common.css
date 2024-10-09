@@ -165,6 +165,28 @@ a:hover{
     width: 240px;
 }
 
+#news ul {
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    padding: 20px 0;
+    margin: 0 20px;
+    width: calc(100% - 40px);
+}
+
+#news ul li {
+    list-style-type: none;
+    display: flex;
+}
+#news li p {
+    display: inline-block;
+}
+#news li p.date {
+    width: 9em;
+}
+#news li p.text {
+    width: calc(100% - 9em);
+}
+
 .sec-story {
     position: relative;
 }
